@@ -4,8 +4,9 @@ from pathlib import Path
 from django.core.management.base import BaseCommand
 
 from catalogo.models import Producto
-
-
+#pobla la base de datos con el json
+#la IA creó este comando de gestión para poblar la base de datos con los productos del archivo JSON.
+#despues lo puedes ejecutar con el comando: python manage.py poblar_productos
 class Command(BaseCommand):
     help = 'Carga los productos del archivo JSON a la base de datos.'
 
